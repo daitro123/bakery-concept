@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="/css/main.css" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,600;0,800;1,400&display=swap"
+			rel="stylesheet"
+		/>
+		<title>Jelen Bakery</title>
+	</head>
+	<body data-barba="wrapper">
+		<div class="overlay--darker">
+			<header class="header">
+				<nav class="nav__first">
+					<ul class="nav__links">
+						<li class="nav__link"><a href="index.html">Home</a></li>
+						<li class="nav__link"><a href="about.html">O nás</a></li>
+					</ul>
+				</nav>
+				<img src="/img/bakery logo.png" alt="logo" class="nav__img" />
+				<nav class="nav__second">
+					<ul class="nav__links">
+						<li class="nav__link"><a href="nabidka.html">Nabídka</a></li>
+						<li class="nav__link"><a href="contact.html">Kontakt</a></li>
+					</ul>
+				</nav>
+			</header>
+
+			<main
+				id="contact"
+				class="contact"
+				data-barba="container"
+				data-barba-namespace="contact"
+			>
+				<div class="contact__container">
+					<ul>
+						<li class="contact__name">Jelen Bakery</li>
+						<li class="contact__street">U Vlka 25</li>
+						<li class="contact__city">Cheb</li>
+						<li class="contact__phone">123 456 799</li>
+						<li class="contact__email">jelen@bakery.com</li>
+					</ul>
+				</div>
+			</main>
+		</div>
+
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"
+			integrity="sha512-1dalHDkG9EtcOmCnoCjiwQ/HEB5SDNqw8d4G2MKoNwjiwMNeBAkudsBCmSlMnXdsH8Bm0mOd3tl/6nL5y0bMaQ=="
+			crossorigin="anonymous"
+		></script>
+		<script src="https://unpkg.com/@barba/core"></script>
+		<script src="/index.js"></script>
+	</body>
+</html>

@@ -1,0 +1,47 @@
+.nabidka {
+	&__selection {
+		width: 50rem;
+		margin: 3vh auto 3vh auto;
+		display: flex;
+		justify-content: space-between;
+
+		@include media("phone") {
+			width: 100%;
+			justify-content: space-evenly;
+		}
+		&-item {
+			padding: 1.5rem 2rem;
+			border: 1px solid #f4f4f4;
+			cursor: pointer;
+			border-radius: 2px;
+
+			@include media("phone") {
+				padding: 0.7rem 1rem;
+			}
+
+			&:hover {
+				background-color: rgba($color: #808080, $alpha: 0.2);
+			}
+		}
+	}
+
+	&__items {
+		width: 100%;
+		text-align: center;
+	}
+
+	&__item {
+		margin-bottom: 3rem;
+		opacity: 0;
+		transform: translateY(-20px);
+
+		&-title {
+			font-size: 2.5rem;
+			margin-bottom: 1rem;
+		}
+
+		&-weight {
+			margin-right: 1rem;
+		}
+	}
+}

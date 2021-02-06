@@ -1,0 +1,49 @@
+@keyframes lineWidth {
+	from {
+		transform: scale(0);
+	}
+
+	to {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+
+@keyframes moveDown {
+	from {
+		transform: translateY(-3rem);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateY(0rem);
+	}
+}
+
+@keyframes moveUp {
+	from {
+		transform: translateY(3rem);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateY(0rem);
+	}
+}
+
+@keyframes moveFromRight {
+	from {
+		transform: translateX(3rem);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateX(0rem);
+	}
+}
+
+@keyframes moveDown2 {
+	to {
+		transform: translateY(0rem);
+	}
+}

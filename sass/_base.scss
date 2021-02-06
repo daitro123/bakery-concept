@@ -1,0 +1,34 @@
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+	padding: 0;
+	margin: 0;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+html {
+	box-sizing: border-box;
+	font-size: 62.5%;
+
+	@include media("tablet") {
+		font-size: 50%;
+	}
+}
+
+body {
+	background-image: url(/img/bread-center.webp);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+	font-family: "Bodoni Moda", serif;
+	font-size: 1.6rem;
+	color: #f4f4f4;
+	transition: background-image 1s linear;
+	overflow: hidden;
+}

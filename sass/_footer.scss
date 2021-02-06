@@ -1,0 +1,26 @@
+.footer {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	text-align: center;
+
+	&__icons {
+	}
+
+	&__icon {
+		height: 1.5rem;
+		width: 1.5rem;
+		fill: rgb(255, 255, 255);
+		cursor: pointer;
+	}
+
+	&__icon + &__icon {
+		margin-left: 2rem;
+	}
+}
+
+.signature {
+	font-size: 1.2rem;
+	padding: 0.5rem;
+}

@@ -1,0 +1,100 @@
+.about {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 80%;
+	margin: 5vw 0;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+
+	@include media("phone") {
+		flex-direction: column-reverse;
+	}
+
+	&__img-container,
+	&__text-container {
+		flex: 50%;
+	}
+
+	&__img-container {
+		display: flex;
+		position: relative;
+
+		@include media("tablet") {
+			width: 100%;
+			justify-content: space-evenly;
+		}
+	}
+
+	&__text-container {
+		padding: 0 8vw;
+
+		@include media("tablet") {
+			padding: 0 5vw;
+		}
+	}
+
+	&__img {
+		width: 15vw;
+		position: absolute;
+
+		@include media("phone") {
+			position: static;
+			width: 30vw;
+			margin-top: 3rem;
+		}
+
+		&:nth-child(1) {
+			top: -18rem;
+			right: 18vw;
+			opacity: 0;
+			animation-name: moveDown;
+			animation-duration: 1.5s;
+			animation-delay: 0.5s;
+			animation-fill-mode: forwards;
+
+			@include media("phone") {
+			}
+		}
+
+		&:nth-child(2) {
+			top: -2vw;
+			right: 5vw;
+			opacity: 0;
+			animation-name: moveUp;
+			animation-duration: 1.5s;
+			animation-delay: 0.8s;
+			animation-fill-mode: forwards;
+		}
+	}
+
+	&__title {
+		font-size: 3rem;
+		margin-bottom: 2rem;
+		opacity: 0;
+		animation-name: moveFromRight;
+		animation-duration: 1s;
+		animation-fill-mode: forwards;
+		animation-delay: 0.5s;
+	}
+
+	&__secondary-title {
+		font-size: 2rem;
+		margin-bottom: 1rem;
+		color: #ff9900;
+		opacity: 0;
+		animation-name: moveFromRight;
+		animation-duration: 1s;
+		animation-fill-mode: forwards;
+		animation-delay: 0.8s;
+	}
+
+	&__text {
+		opacity: 0;
+		animation-name: moveUp;
+		animation-duration: 1s;
+		animation-fill-mode: forwards;
+		animation-delay: 1s;
+	}
+}
