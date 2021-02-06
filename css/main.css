@@ -524,6 +524,12 @@ body {
   margin: 0 2rem;
 }
 
+@media only screen and (max-width: 640px) {
+  .nav__img {
+    height: 10rem;
+  }
+}
+
 .nav__link {
   text-shadow: var(--text-shadow);
   -webkit-transition: all 0.2s;
