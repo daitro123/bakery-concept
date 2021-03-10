@@ -49,7 +49,7 @@ barba.init({
 				let scriptTag = document.querySelector('script[src="/pecivo.js"]');
 				if (!scriptTag) {
 					let script = document.createElement("script");
-					script.src = "/pecivo.js";
+					script.src = "/bakery-concept/pecivo.js";
 					document.querySelector("body").appendChild(script);
 				}
 
